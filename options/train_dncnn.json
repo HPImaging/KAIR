@@ -23,7 +23,12 @@
       , "dataroot_L": null              // path of L training dataset
       , "H_size": 40                    // patch size 40 | 64 | 96 | 128 | 192
 
-      , "sigma": 25                     // 15, 25, 50 for DnCNN | [0, 75] for FFDNet and FDnCNN
+      //, "sigma": 25                     // 15, 25, 50 for DnCNN | [0, 75] for FFDNet and FDnCNN
+      //, "sigma": 25.5                   // sigma is training noise relative to 255 (sig[0,255]=25.5 -> sig[0,1]=0.10)
+      , "sigma": 7.65                   // sig[0,255]=7.65 -> sig[0,1]=0.03
+      //, "sigma": 2.55                   // sig[0,255]=2.55 -> sig[0,1]=0.01
+      //, "sigma": 1.275                  // sig[0,255]=1.275 -> sig[0,1]=0.005
+      //, "sigma": 0.255                  // sig[0,255]=0.255 -> sig[0,1]=0.001
       , "sigma_test": 25                // 15, 25, 50 for DnCNN and ffdnet
 
       , "dataloader_shuffle": true
@@ -38,11 +43,6 @@
       , "dataroot_L": null              // path of L testing dataset
 
       , "sigma": 25                     // 15, 25, 50 for DnCNN | [0, 75] for FFDNet and FDnCNN
-      //, "sigma": 25.5                   // sigma is training noise relative to 255 (sig[0,255]=25.5 -> sig[0,1]=0.10)
-      //, "sigma": 7.65                   // sig[0,255]=7.65 -> sig[0,1]=0.03
-      //, "sigma": 2.55                   // sig[0,255]=2.55 -> sig[0,1]=0.01
-      //, "sigma": 1.275                  // sig[0,255]=1.275 -> sig[0,1]=0.005
-      //, "sigma": 0.255                  // sig[0,255]=0.255 -> sig[0,1]=0.001
       , "sigma_test": 25                // 15, 25, 50 for DnCNN and ffdnet
 
     }
